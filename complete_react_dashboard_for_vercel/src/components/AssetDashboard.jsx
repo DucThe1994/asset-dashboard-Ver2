@@ -14,7 +14,7 @@ export default function AssetDashboard() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("https://your-backend-name.onrender.com/api/asset-correlation")
+    fetch("https://asset-correlation-backend.onrender.com/api/asset-correlation")
       .then((res) => res.json())
       .then((data) => setData(data));
   }, []);
